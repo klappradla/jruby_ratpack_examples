@@ -29,3 +29,28 @@
     end
   end
   ```
+* implementing an interface: `all(Handler handler)`
+  * https://ratpack.io/manual/current/api/ratpack/handling/Chain.html#all-java.lang.Class-
+  * https://ratpack.io/manual/current/api/ratpack/handling/Handler.html
+
+  ```ruby
+  RatpackServer.start do |server|
+    server.handlers do |chain|
+      chain.get do |ctx|
+        ctx.render 'Hello World from Ratpack / jRuby'
+      end
+      chain.all(Handler::Default)
+    end
+  end
+
+  # handler/default.rb
+  module Handler
+    class Default
+      def self.handle(ctx)
+        ctx.render 'Nothing here, sorry'
+      end
+    end
+  end
+  ```
+
+
