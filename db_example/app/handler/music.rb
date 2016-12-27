@@ -1,4 +1,5 @@
 java_import 'ratpack.exec.Blocking'
+java_import 'ratpack.jackson.Jackson'
 
 module Handler
   class Music
@@ -16,7 +17,7 @@ module Handler
       end
 
       def render(ctx, data)
-        ctx.render(JSON.dump(data))
+        ctx.render(Jackson.json(data))
       end
     end
   end

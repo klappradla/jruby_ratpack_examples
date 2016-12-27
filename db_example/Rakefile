@@ -11,6 +11,7 @@ namespace :db do
 
   task :seed do
     require_relative './config/environment'
+    DB[:albums].delete
     50.times do
       DB[:albums].insert(
         name:   Faker::Hipster.sentence,
