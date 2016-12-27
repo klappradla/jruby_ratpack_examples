@@ -1,3 +1,5 @@
+require 'json'
+
 java_import 'ratpack.http.client.HttpClient'
 java_import 'ratpack.jackson.Jackson'
 
@@ -22,7 +24,8 @@ module Handler
     end
 
     def render(resp)
-      ctx.render(Jackson.json(resp.get_body.get_text))
+      body = JSON.parse(resp.get_body.get_text)
+      ctx.render(Jackson.json(body))
     end
   end
 end
