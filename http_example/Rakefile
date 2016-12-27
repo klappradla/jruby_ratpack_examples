@@ -1,0 +1,23 @@
+namespace :db do
+  task :init do
+    require_relative './config/environment'
+    DB.create_table :albums do
+      primary_key :id
+      String      :name
+      String      :artist
+      Integer     :year
+    end
+  end
+
+  task :seed do
+    require_relative './config/environment'
+    DB[:albums].delete
+    50.times do
+      DB[:albums].insert(
+        name:   Faker::Hipster.sentence,
+        artist: Faker::RockBand.name,
+        year:   Faker::Date.backward(10_000).year
+      )
+    end
+  end
+end

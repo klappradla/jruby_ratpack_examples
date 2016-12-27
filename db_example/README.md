@@ -10,6 +10,10 @@
 
 ## Notes
 
+Call endpoint:
+
+    $ curl -v http://localhost:5050/music
+
 Blocking DB call simple:
 ```ruby
 java_import 'ratpack.server.RatpackServer'
