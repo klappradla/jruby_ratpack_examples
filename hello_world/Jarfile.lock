@@ -1,0 +1,26 @@
+---
+:runtime:
+- org.javassist:javassist:jar:3.19.0-GA
+- io.ratpack:ratpack-core:jar:1.4.0
+- org.slf4j:slf4j-api:jar:1.7.21
+- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.7.5
+- io.netty:netty-resolver:jar:4.1.4.Final
+- com.fasterxml.jackson.core:jackson-annotations:jar:2.7.0
+- org.reactivestreams:reactive-streams:jar:1.0.0
+- jline:jline:jar:2.11
+- io.netty:netty-common:jar:4.1.4.Final
+- org.yaml:snakeyaml:jar:1.14
+- com.google.guava:guava:jar:19.0
+- com.fasterxml.jackson.core:jackson-databind:jar:2.7.5
+- com.github.ben-manes.caffeine:caffeine:jar:2.3.1
+- com.fasterxml.jackson.datatype:jackson-datatype-guava:jar:2.7.5
+- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.7.5
+- org.slf4j:slf4j-simple:jar:1.7.20
+- io.netty:netty-transport:jar:4.1.4.Final
+- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.7.5
+- com.fasterxml.jackson.core:jackson-core:jar:2.7.5
+- io.netty:netty-buffer:jar:4.1.4.Final
+- io.netty:netty-codec-http:jar:4.1.4.Final
+- io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.4.Final
+- io.netty:netty-handler:jar:4.1.4.Final
+- io.netty:netty-codec:jar:4.1.4.Final
