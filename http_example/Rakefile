@@ -1,4 +1,5 @@
 namespace :db do
+  desc 'Initialize database schema'
   task :init do
     require_relative './config/environment'
     DB.create_table :albums do
@@ -9,6 +10,7 @@ namespace :db do
     end
   end
 
+  desc 'Add fake seed data to database'
   task :seed do
     require_relative './config/environment'
     DB[:albums].delete
