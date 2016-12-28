@@ -39,8 +39,8 @@ Example implementation for non-blocking http requests with jRuby and Ratpack.
   http://localhost:5050/planets # http request to external api
   http://localhost:5050/*       # 404
   ```
-  
-* Run an interative console
+
+* Run an interactive console
 
   ```sh
   $ bin/console
