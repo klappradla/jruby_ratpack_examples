@@ -4,21 +4,31 @@ Example implementation for non-blocking database access with jRuby and Ratpack.
 
 ## Setup
 
+1. Install dependencies
+
+  ```sh
+  # ruby dependencies
+  $ bundle install
+
+  # java dependencies
+  $ jbundle install
+  ```
+
 1. Install PostgreSQL and start server locally
 
-2. Set up database:
+1. Set up database
 
   ```sh
   $ createdb jruby_ratpack_example
   ```
 
-3. Initialize database schema:
+1. Initialize database schema
 
   ```sh
   $ rake db:init
   ```
 
-4. Populate database with seed data:
+1. Populate database with seed data
 
   ```sh
   $ rake db:seed
