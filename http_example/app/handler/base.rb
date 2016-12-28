@@ -15,8 +15,9 @@ module Handler
     private
 
     attr_reader :ctx
+
+    def response
+      @response ||= ctx.get_response
+    end
   end
 end
-
-require_relative './music'
-require_relative './stuff'
