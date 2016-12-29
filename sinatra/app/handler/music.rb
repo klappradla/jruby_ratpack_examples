@@ -1,4 +1,5 @@
 require 'json'
+require_relative '../db'
 
 module Handler
   class Music
