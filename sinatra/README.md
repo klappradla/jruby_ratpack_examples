@@ -1,17 +1,13 @@
-# HTTP Example
+# Sinatra implementation
 
-Example implementation for non-blocking http requests with jRuby and Ratpack.
+Pure jRuby implementation of the [HTTP Requests Example](../http_example) using [Sinatra](http://www.sinatrarb.com/).
 
 ## Setup
 
 1. Install dependencies
 
   ```sh
-  # ruby dependencies
   $ bundle install
-
-  # java dependencies
-  $ jbundle install
   ```
 
 1. Install PostgreSQL and start server locally
@@ -54,10 +50,4 @@ Example implementation for non-blocking http requests with jRuby and Ratpack.
 
   ```sh
   $ PLANETS_URL="http://localhost:3000/planets" bin/server
-  ```
-
-* Run an interactive console
-
-  ```sh
-  $ bin/console
   ```

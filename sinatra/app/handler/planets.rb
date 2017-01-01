@@ -3,7 +3,7 @@ require 'net/http'
 
 module Handler
   class Planets
-    URL = 'http://swapi.co/api/planets/?format=json'
+    URL = ENV['PLANETS_URL'] || 'http://swapi.co/api/planets/?format=json'
 
     class << self
       def handle

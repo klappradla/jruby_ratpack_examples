@@ -2,7 +2,7 @@ java_import 'ratpack.http.client.HttpClient'
 
 module Handler
   class Planets < Base
-    URL = java.net.URI.new('http://swapi.co/api/planets')
+    URL = java.net.URI.new(ENV['PLANETS_URL'] || 'http://swapi.co/api/planets')
 
     def handle
       call_api.then do |resp|
