@@ -1,12 +1,14 @@
 # Benchmarks
 
-Quick benchmarking to compare the Sinatra implementation against the Ratpack implementation.
+Quick benchmarking to compare the Sinatra implementation against the Ratpack implementation. Using a locally running endpoint for the http requests due to rate limits on external ones.
 
 ## Setup
 
 1. Install [wrk](https://github.com/wg/wrk)
 
-1. Start the Go api without logging output to stdout
+1. Install the [Planet Service](https://github.com/klappradla/planet_service)
+
+1. Start the Planet Service without logging output to stdout
 
   ```sh
   /planet_service > /dev/null
