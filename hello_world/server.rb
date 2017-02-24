@@ -8,7 +8,7 @@ java_import 'ratpack.server.RatpackServer'
 RatpackServer.start do |server|
   server.handlers do |chain|
     chain.get do |ctx|
-      ctx.render 'Hello World from Ratpack / jRuby'
+      ctx.render 'Hello World from Ratpack / JRuby'
     end
   end
 end

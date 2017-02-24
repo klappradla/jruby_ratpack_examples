@@ -8,13 +8,13 @@ Install dependencies
 $ bundle install
 
 # java dependencies
-$ jbundle install
+$ bundle exec jbundle install
 ```
 
 ### Run
 
 Start the server
 
-    $ bin/server
+    $ ruby server.rb
 
 *(starts the server on localhost:5050)*

@@ -11,7 +11,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     equalizer (0.0.11)
     ice_nine (0.11.2)
-    jar-dependencies (0.3.8)
+    jar-dependencies (0.3.10)
     jbundler (0.9.3)
       bundler (~> 1.5)
       jar-dependencies (~> 0.3)
@@ -22,7 +22,7 @@ GEM
     ruby-maven (3.3.12)
       ruby-maven-libs (~> 3.3.9)
     ruby-maven-libs (3.3.9)
-    thread_safe (0.3.5-java)
+    thread_safe (0.3.6-java)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -35,8 +35,5 @@ PLATFORMS
 DEPENDENCIES
   jbundler
 
-RUBY VERSION
-   ruby 2.3.1p0 (jruby 9.1.6.0)
-
 BUNDLED WITH
-   1.13.6
+   1.14.3
