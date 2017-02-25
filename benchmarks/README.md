@@ -32,31 +32,29 @@ Quick benchmarking to compare the Sinatra implementation against the Ratpack imp
 ### Sinatra example
 
 ```sh
-wrk -c 100 -t 4 -d 1m -s request.lua http://localhost:5050
-Running 1m test @ http://localhost:5050
+❯ wrk -c 100 -t 4 -d 30s -s request.lua http://localhost:5050
+Running 30s test @ http://localhost:5050
   4 threads and 100 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   302.15ms  417.23ms   1.99s    84.58%
-    Req/Sec   122.99     63.97   380.00     66.50%
-  29176 requests in 1.00m, 83.26MB read
-  Socket errors: connect 0, read 0, write 0, timeout 552
-  Non-2xx or 3xx responses: 9735
-Requests/sec:    485.58
-Transfer/sec:      1.39MB
+    Latency   284.63ms  358.37ms   1.95s    85.07%
+    Req/Sec   145.18     72.13   434.00     65.54%
+  16392 requests in 30.08s, 64.94MB read
+  Socket errors: connect 0, read 0, write 0, timeout 72
+  Non-2xx or 3xx responses: 1
+Requests/sec:    545.00
+Transfer/sec:      2.16MB
 ```
 
 ## Ratpack example
 
 ```sh
-wrk -c 100 -t 4 -d 1m -s request.lua http://localhost:5050
-Running 1m test @ http://localhost:5050
+❯ wrk -c 100 -t 4 -d 30s -s request.lua http://localhost:5050
+Running 30s test @ http://localhost:5050
   4 threads and 100 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   183.24ms  255.69ms   1.97s    86.30%
-    Req/Sec   328.76    141.23   830.00     68.23%
-  78379 requests in 1.00m, 200.23MB read
-  Socket errors: connect 0, read 0, write 0, timeout 13
-  Non-2xx or 3xx responses: 26268
-Requests/sec:   1305.99
-Transfer/sec:      3.34MB
+    Latency   138.14ms  198.44ms   1.74s    86.81%
+    Req/Sec   333.54    119.68   767.00     68.60%
+  32159 requests in 30.09s, 123.69MB read
+Requests/sec:   1068.61
+Transfer/sec:      4.11MB
 ```

@@ -1,7 +1,7 @@
 -- dynamic request script
 -- randomly changes the endpoint on every request
 
-paths = { '/planets', '/music', '/random' }
+paths = { '/planets', '/music' }
 
 math.randomseed(os.time())
 
