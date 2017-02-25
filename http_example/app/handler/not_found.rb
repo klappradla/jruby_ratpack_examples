@@ -1,7 +1,7 @@
 module Handler
   class NotFound < Base
-    def handle
-      response.status(404).send
+    def call
+      ctx.not_found
     end
   end
 end

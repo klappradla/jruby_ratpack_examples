@@ -3,7 +3,7 @@ java_import 'ratpack.jackson.Jackson'
 
 module Handler
   class Music < Base
-    def handle
+    def call
       Blocking
         .get { DB[:albums].all }
         .map { |data| Jackson.json(data)}

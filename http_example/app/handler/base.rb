@@ -1,23 +1,20 @@
 module Handler
   class Base
-    def self.handle(args)
-      new(*args).handle
+    def self.handle(ctx)
+      new(ctx).call
     end
 
     def initialize(ctx)
-      @ctx = ctx
+      @ctx  = ctx
+      @resp = ctx.get_response
     end
 
-    def handle
-      raise NotImplementedError, "handle not implemented for #{self.class}"
+    def call
+      raise NotImplementedError
     end
 
     private
 
-    attr_reader :ctx
-
-    def response
-      @response ||= ctx.get_response
-    end
+    attr_reader :ctx, :resp
   end
 end
