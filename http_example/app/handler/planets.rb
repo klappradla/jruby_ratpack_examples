@@ -5,22 +5,19 @@ module Handler
     URL = java.net.URI.new(ENV['PLANETS_URL'] || 'http://swapi.co/api/planets')
 
     def handle
-      call_api.then do |resp|
-        render(resp)
-      end
+      ctx
+        .get(HttpClient.java_class)
+        .get(URL)
+        .then(&render)
     end
 
     private
 
-    def call_api
-      client.get(URL)
+    def render
+      ->(data) { build_response(data) }
     end
 
-    def client
-      ctx.get(HttpClient.java_class)
-    end
-
-    def render(resp)
+    def build_response(resp)
       response.send('application/json;charset=UTF-8', resp.get_body.get_text)
     end
   end

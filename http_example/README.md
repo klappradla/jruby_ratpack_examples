@@ -11,7 +11,7 @@ Example implementation for non-blocking http requests with jRuby and Ratpack.
   $ bundle install
 
   # java dependencies
-  $ jbundle install
+  $ bundle exec jbundle install
   ```
 
 1. Install PostgreSQL and start server locally
@@ -25,13 +25,13 @@ Example implementation for non-blocking http requests with jRuby and Ratpack.
 1. Initialize database schema
 
   ```sh
-  $ rake db:init
+  $ bundle exec rake db:init
   ```
 
 1. Populate database with seed data
 
   ```sh
-  $ rake db:seed
+  $ bundle exec rake db:seed
   ```
 
 ## Getting Started
