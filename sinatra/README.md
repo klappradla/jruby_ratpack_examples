@@ -21,13 +21,13 @@ Pure jRuby implementation of the [HTTP Requests Example](../http_example) using 
 1. Initialize database schema
 
   ```sh
-  $ rake db:init
+  $ bundle exec rake db:init
   ```
 
 1. Populate database with seed data
 
   ```sh
-  $ rake db:seed
+  $ bundle exec rake db:seed
   ```
 
 ## Getting Started
