@@ -5,7 +5,7 @@ module Handler
   class Music
     class << self
       def handle
-        data.to_json
+        JSON.dump(data)
       end
 
       private
