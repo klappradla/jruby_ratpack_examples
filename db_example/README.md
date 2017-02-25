@@ -25,13 +25,13 @@ Example implementation for non-blocking database access with jRuby and Ratpack.
 1. Initialize database schema
 
   ```sh
-  $ rake db:init
+  $ bundle exec rake db:init
   ```
 
 1. Populate database with seed data
 
   ```sh
-  $ rake db:seed
+  $ bundle exec rake db:seed
   ```
 
 ## Getting Started
