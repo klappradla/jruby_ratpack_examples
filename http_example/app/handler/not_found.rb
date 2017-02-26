@@ -1,7 +1,9 @@
 module Handler
-  class NotFound < Base
-    def call
-      ctx.not_found
+  class NotFound
+    class << self
+      def handle(ctx)
+        ctx.not_found
+      end
     end
   end
 end
