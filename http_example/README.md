@@ -1,6 +1,6 @@
 # HTTP Example
 
-Example implementation for non-blocking http requests with jRuby and Ratpack.
+Example implementation for non-blocking http requests with JRuby and Ratpack.
 
 ## Setup
 

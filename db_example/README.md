@@ -1,6 +1,6 @@
 # DB Example
 
-Example implementation for non-blocking database access with jRuby and Ratpack.
+Example implementation for non-blocking database access with JRuby and Ratpack.
 
 ## Setup
 

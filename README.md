@@ -1,4 +1,4 @@
-# jRuby with Ratpack Examples
+# JRuby with Ratpack Examples
 
 Code samples for my talks at [vienna.rb][vienna-rb] and [RUG::B][rug-b]. All examples can be run independently.
 

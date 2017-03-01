@@ -1,6 +1,6 @@
 # Sinatra implementation
 
-Pure jRuby implementation of the [HTTP Requests Example](../http_example) using [Sinatra](http://www.sinatrarb.com/).
+Pure JRuby implementation of the [HTTP Requests Example](../http_example) using [Sinatra](http://www.sinatrarb.com/).
 
 ## Setup
 

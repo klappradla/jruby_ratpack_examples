@@ -1,4 +1,4 @@
-# Hello World with jRuby and Ratpack
+# Hello World with JRuby and Ratpack
 
 ## Setup
 
